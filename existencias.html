@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existencias de Libros</title>
+    <link rel="stylesheet" href="existencias.css">
+</head>
+<body>
+    <div id="existencias-container">
+        <h2>Existencias de Libros</h2>
+        
+        <form id="searchForm" onsubmit="searchBook(event)">
+            <label for="searchQuery">Buscar Libro:</label>
+            <input type="text" id="searchQuery" name="searchQuery" placeholder="Ingrese el título o autor">
+
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="resultContainer" style="display: none;">
+            <h3>Resultado de la búsqueda:</h3>
+            <img id="bookImage" src="" alt="Libro">
+            <p>Cantidad: <span id="bookQuantity"></span></p>
+        </div>
+    </div>
+
+    <script src="existencias.js"></script>
+</body>
+</html>
